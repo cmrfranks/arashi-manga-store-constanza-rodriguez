@@ -1,0 +1,483 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Estilo del header */
+
+header{
+    background-image: url(../img/Fondos/collage2.jpg)
+    }
+
+header a{
+    font-family: 'Ubuntu', sans-serif;
+    color:brown;
+    -webkit-text-stroke: 1px crimson;
+}  
+
+.busqueda{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+/* Estilo del body */
+
+body{
+    background-color: dimgray;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: crimson;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 2px;
+}
+
+/* Título principal */
+
+.mainTitle{
+    padding: 15px;
+    border: 2px solid black;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    background-color: crimson;
+
+}
+
+h1{
+    -webkit-text-stroke: 0.5px white;
+   text-align: center;
+}
+
+/* Barra de navegación */
+
+header nav ul li{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 15px 15px;
+    background-color: black;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav ul li a:hover{
+    background-color: darkgray;
+    border-radius: 10px;
+}
+
+.navegacion{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+div ul li a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+div ul li a:hover{
+    background-color: darkgray;
+    border-radius: 10px;
+}
+
+/* Estilo index grid */
+
+.containerIndex {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+     "header header header header header"
+     "masVendidos masVendidos masVendidos masVendidos masVendidos"
+     "ofertas ofertas ofertas ofertas ofertas"
+     "footer footer footer footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .masVendidos { grid-area: masVendidos; }
+  
+  .ofertas { grid-area: ofertas; }
+  
+  .footer { grid-area: footer; }
+  
+  
+/* Secciones */
+
+h3{
+    text-align: center;
+    border: 2px solid black;
+}
+
+h4{
+    text-align: center;
+    border: 2px solid black;
+}
+
+.subtitle{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 25px;
+    background-color: crimson;
+    -webkit-text-stroke: 0.01px white;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 35px;
+}
+
+/* Imagen de Anya */
+
+.imgVendidos img{
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    left: 1150px;
+    bottom: 252px;
+}
+
+/* Imagen de Bond */
+
+.imgOfertas img{
+    width: 150px;
+    height: 200px;
+    position: relative;
+    z-index: 5;
+    left: 1150px;
+    top: 50px;
+}
+
+.listaVendidos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.listaVendidos p, button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 5px;
+    padding: 5px;
+}
+
+.listaVendidos button{
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.lista li{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.covers{
+    display: flex;
+    justify-content: center;
+}
+
+.listaCovers{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.listaCovers div{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 175px;
+    height: 315px;
+    padding: 15px;
+    margin: 10px;
+
+}
+
+.listaCovers img{
+    width: 150px;
+    height: 200px;
+    align-self: center;
+}
+
+.card {
+    background-color: darkgrey;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 15px;
+
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card p{
+    padding: 5px;
+}
+
+.card button{
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.listaOfertas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilo del footer */
+
+footer{
+    background-color: crimson;
+}
+
+.music{
+    display: flex;
+    justify-content: left;
+    margin: 15px;
+    padding: 20px;
+}
+
+.saludo p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: large;
+}
+
+.saludo{
+    text-align: center;
+    margin: 15px;
+    padding: 20px;
+}
+
+/* Estilo catálogo */
+
+.search ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.search ul li{
+    border-radius: 25px;   
+    background-color: black;
+}
+
+.search ul li a{
+    font-family: 'Ubuntu', sans-serif;
+    color:brown;
+    -webkit-text-stroke: 1px crimson;
+}  
+
+.subir{
+    display: none;
+}
+
+/* Estilo catálogo grid */
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+      "header header header header header"
+      "search search search search search"
+      "shounen shounen shounen shounen shounen"
+      "shoujo shoujo shoujo shoujo shoujo"
+      "seinen seinen seinen seinen seinen"
+      "josei josei josei josei josei"
+      "spokon spokon spokon spokon spokon"
+      "mecha mecha mecha mecha mecha"
+      "isekai isekai isekai isekai isekai"
+      "footer footer footer footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .search { grid-area: search; }
+  
+  .shounen { grid-area: shounen; }
+  
+  .shoujo { grid-area: shoujo; }
+  
+  .seinen { grid-area: seinen; }
+  
+  .josei { grid-area: josei; }
+  
+  .spokon { grid-area: spokon; }
+  
+  .mecha { grid-area: mecha; }
+  
+  .isekai { grid-area: isekai; }
+  
+  .footer { grid-area: footer; }
+  
+
+/* Estilo contacto */
+
+.label{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.formItem{
+    margin: 15px;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.boton{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.boton:hover{
+    color: crimson;
+    border-radius: 25px;
+}
+
+/* Estilo grid contacto */
+
+.containerContacto {  display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "header header header"
+      "form form form"
+      "footer footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .form { grid-area: form; }
+  
+  .footer { grid-area: footer; }
+  
+
+/* Estilo grid merch */
+
+.containerMerch {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header header"
+      "figuras figuras figuras figuras"
+      "accesorios accesorios accesorios accesorios"
+      "indumentaria indumentaria indumentaria indumentaria"
+      "footer footer footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .figuras { grid-area: figuras; }
+  
+  .accesorios { grid-area: accesorios; }
+  
+  .indumentaria { grid-area: indumentaria; }
+  
+  .footer { grid-area: footer; }
+
+  /* Estilo grid Recomendados */
+
+  .containerRec {  display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "header header header"
+      "section1 section1 section1"
+      "section2 section2 section2"
+      "section3 section3 section3";
+  }
+  
+  .header { grid-area: header; }
+  
+  .section1 { grid-area: section1; }
+  
+  .section2 { grid-area: section2; }
+  
+  .section3 { grid-area: section3; }
+
+
+  .containerRec p{
+    font-family: "Ubuntu", sans-serif;
+    text-align: left;
+    color: rgb(255, 255, 255);
+  }
+
+  .texto{
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(34, 31, 31);
+    text-align: justify;
+  }
+
+  .recomendacion{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+  }
+  
+  .containerRec div img{
+    width: 675px;
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 10px;
+  }
+
+/* MEDIA QUERIES */
+
+/* Flecha para subir */
+
+@media(max-width: 500px){
+
+    .subir{
+        display: block;
+        position: fixed; 
+        right: 0px;
+        bottom: 0px;
+    }
+    
+    .subir img{
+        width: 50px;
+        height: 50px;
+        background-color: crimson;
+        border-radius: 50%;
+        
+    }
+
+    .music{
+        display: none;
+    }
+
+}
