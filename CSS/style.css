@@ -459,11 +459,15 @@ footer{
     from{
         margin-left: 100%;
         width: auto;
+        white-space: nowrap;
+        overflow: hidden;
     }
 
     to{
         margin-left: 0%;
         width: auto;
+        white-space: nowrap;
+        overflow: hidden;
     }
   }
 
