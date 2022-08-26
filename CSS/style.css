@@ -32,22 +32,26 @@ body{
 .logo{
     width: 100px;
     height: 100px;
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 20px;
-    background-color: crimson;
     border-radius: 50%;
     border: 2px solid black;
     padding: 2px;
+}
+
+.portada{
+    display: flex;
+    justify-content:center;
+    margin-top: 10rem;
+    width: 100vw;
+    background-color: crimson;
+    border: 2px solid black;
+    padding: 1rem;
 }
 
 /* Título principal */
 
 .mainTitle{
     padding: 15px;
-    border: 2px solid black;
     font-family: 'Mochiy Pop P One', sans-serif;
-    background-color: crimson;
 
 }
 
@@ -470,6 +474,18 @@ footer{
 
     to{
         margin-left: 0%;
+        width: auto;
+    }
+  }
+
+  @keyframes aparicion2{
+    from{
+        margin-left: 0%;
+        width: auto;
+    }
+
+    to{
+        margin-left: 100%;
         width: auto;
     }
   }
