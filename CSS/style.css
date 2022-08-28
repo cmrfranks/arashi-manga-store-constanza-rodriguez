@@ -27,6 +27,7 @@ header a{
 
 body{
     background-color: dimgray;
+    line-height: 1;
 }
 
 .logo{
@@ -49,10 +50,11 @@ body{
     display: flex;
     justify-content:center;
     margin-top: 10rem;
-    width: 100vw;
     background-color: crimson;
     border: 2px solid black;
     padding: 1rem;
+    align-items: center;
+    margin-right: 1px;
 }
 
 /* Título principal */
@@ -104,6 +106,21 @@ div ul li a:hover{
     border-radius: 10px;
 }
 
+/* Carousel */
+
+.fotos{
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+
+    
+}
+
+.carousel .slide{
+    display: flex;
+    justify-content: center;
+}
+
 /* Estilo index grid */
 
 .containerIndex {  display: grid;
@@ -111,12 +128,15 @@ div ul li a:hover{
     grid-template-rows: auto auto auto auto;
     grid-template-areas: 
      "header header header header header"
+     "fotos fotos fotos fotos fotos"
      "masVendidos masVendidos masVendidos masVendidos masVendidos"
      "ofertas ofertas ofertas ofertas ofertas"
      "footer footer footer footer footer";
   }
   
   .header { grid-area: header; }
+
+  .fotos { grid-area: fotos;}
   
   .masVendidos { grid-area: masVendidos; }
   
@@ -450,7 +470,7 @@ footer{
 
   /* ANIMACIONES */
 
-  h1{
+  h1, .logo{
     animation-duration: 3s;
     animation-name: aparicion;
   }
@@ -470,19 +490,30 @@ footer{
         overflow: hidden;
     }
   }
-
-  @keyframes aparicion2{
-    from{
-        margin-left: 0%;
-        width: auto;
-    }
-
-    to{
-        margin-left: 100%;
-        width: auto;
-    }
+ 
+  .logo{
+    animation-duration: 3s;
+    animation-name: rodar;
   }
+ 
+  @keyframes rodar {
+    0% {
+        transform: rotate(90deg);
+    }
 
+    25%{
+        transform: rotate(180deg);
+    }
+
+    50%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}  
+ 
 /* MEDIA QUERIES */
 
 /* Flecha para subir */
